@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19158" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19141"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PratiqueDeLaPOO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLg-jN-uPF" customClass="UserView" customModule="PratiqueDeLaPOO" customModuleProvider="target">
+                                <rect key="frame" x="40" y="137" width="348" height="715"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prénom et nom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quo-cJ-otR">
+                                        <rect key="frame" x="8" y="8" width="332" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="V36-PQ-Gg8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mario" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-dG-jPK" customClass="RoundedImage" customModule="PratiqueDeLaPOO" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="63" width="332" height="332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Fh3-dG-jPK" secondAttribute="height" id="5bT-O3-Rh5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sP6-8Z-ftb">
+                                        <rect key="frame" x="8" y="674" width="332" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="LTx-mM-yQZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="quo-cJ-otR" secondAttribute="trailing" constant="8" id="2w9-Ru-maj"/>
+                                    <constraint firstItem="quo-cJ-otR" firstAttribute="top" secondItem="TLg-jN-uPF" secondAttribute="top" constant="8" id="7MC-dU-inU"/>
+                                    <constraint firstAttribute="trailing" secondItem="sP6-8Z-ftb" secondAttribute="trailing" constant="8" id="Jt7-RS-UzH"/>
+                                    <constraint firstItem="Fh3-dG-jPK" firstAttribute="leading" secondItem="TLg-jN-uPF" secondAttribute="leading" constant="8" id="N0O-XX-Gjv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fh3-dG-jPK" secondAttribute="trailing" constant="8" id="WOm-qL-62p"/>
+                                    <constraint firstItem="quo-cJ-otR" firstAttribute="leading" secondItem="TLg-jN-uPF" secondAttribute="leading" constant="8" id="nGV-Te-QVP"/>
+                                    <constraint firstItem="sP6-8Z-ftb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Fh3-dG-jPK" secondAttribute="bottom" constant="15" id="pCc-0l-q0W"/>
+                                    <constraint firstItem="sP6-8Z-ftb" firstAttribute="leading" secondItem="TLg-jN-uPF" secondAttribute="leading" constant="8" id="qGk-3L-BNB"/>
+                                    <constraint firstItem="Fh3-dG-jPK" firstAttribute="top" secondItem="quo-cJ-otR" secondAttribute="bottom" constant="15" id="wZY-L2-blT"/>
+                                    <constraint firstAttribute="bottom" secondItem="sP6-8Z-ftb" secondAttribute="bottom" constant="20" id="wmO-f3-JFS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="secondaryLabelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="ageLbl" destination="sP6-8Z-ftb" id="ZbQ-ci-nvx"/>
+                                    <outlet property="imageV" destination="Fh3-dG-jPK" id="k9R-OZ-77u"/>
+                                    <outlet property="nameLabel" destination="quo-cJ-otR" id="WSN-CA-ChT"/>
+                                </connections>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="byV-iq-Wbj">
+                                <rect key="frame" x="40" y="59" width="348" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spider" translatesAutoresizingMaskIntoConstraints="NO" id="WAB-YO-E1N" customClass="RoundedImage" customModule="PratiqueDeLaPOO" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="rLg-ej-Ezk"/>
+                                            <constraint firstAttribute="height" constant="60" id="yJa-wf-qMz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joker" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-iZ-vqB" customClass="RoundedImage" customModule="PratiqueDeLaPOO" customModuleProvider="target">
+                                        <rect key="frame" x="96" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="A85-b9-e0W"/>
+                                            <constraint firstAttribute="height" constant="60" id="Gjw-Em-Q6P"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mario" translatesAutoresizingMaskIntoConstraints="NO" id="vI6-Jj-fOB" customClass="RoundedImage" customModule="PratiqueDeLaPOO" customModuleProvider="target">
+                                        <rect key="frame" x="192" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Fay-Me-wdf"/>
+                                            <constraint firstAttribute="width" constant="60" id="z0M-J6-xR5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groot" translatesAutoresizingMaskIntoConstraints="NO" id="rQl-K5-gLY" customClass="RoundedImage" customModule="PratiqueDeLaPOO" customModuleProvider="target">
+                                        <rect key="frame" x="288" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="MyS-fl-Ct5"/>
+                                            <constraint firstAttribute="width" constant="60" id="ajl-Ru-RTx"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TLg-jN-uPF" firstAttribute="top" secondItem="byV-iq-Wbj" secondAttribute="bottom" constant="18" id="3UJ-XU-Gk3"/>
+                            <constraint firstItem="TLg-jN-uPF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="8Yb-rI-Bqg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TLg-jN-uPF" secondAttribute="trailing" constant="40" id="EHg-Mh-PnB"/>
+                            <constraint firstItem="byV-iq-Wbj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="VRD-YL-C1T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TLg-jN-uPF" secondAttribute="bottom" constant="40" id="cfL-kH-abs"/>
+                            <constraint firstItem="byV-iq-Wbj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="ndg-2g-2tl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="byV-iq-Wbj" secondAttribute="trailing" constant="40" id="ouJ-mA-l4g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="TLg-jN-uPF" id="PsR-NZ-wC0"/>
+                        <outletCollection property="topImages" destination="WAB-YO-E1N" collectionClass="NSMutableArray" id="SgK-1F-tR3"/>
+                        <outletCollection property="topImages" destination="n1h-iZ-vqB" collectionClass="NSMutableArray" id="nXD-a1-eZ2"/>
+                        <outletCollection property="topImages" destination="vI6-Jj-fOB" collectionClass="NSMutableArray" id="n9R-Qr-f3r"/>
+                        <outletCollection property="topImages" destination="rQl-K5-gLY" collectionClass="NSMutableArray" id="HAm-Zv-PYR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="groot" width="3121" height="4682"/>
+        <image name="joker" width="3456" height="5184"/>
+        <image name="mario" width="1280" height="884"/>
+        <image name="spider" width="4000" height="5000"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
